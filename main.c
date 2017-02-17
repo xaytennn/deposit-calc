@@ -1,11 +1,12 @@
 #include <stdio.h>
-
+int input (int x);
 int main()
 {
     int i, n, summ, time;
-    input(summ);
     input(time);
-    if (time<0 || time>365) {printf("Incorrect time"); return 0;}
+    input(summ);
+    if (time < 0 || time > 365) {printf("Incorrect time"); return 0;}
+    if (summ < 10000) {printf("Incorrect  summ"); return 0;}
 }
 
 int input(int x)
@@ -14,7 +15,7 @@ int input(int x)
     return x;
 }
 
-int percent(int summ, int time)
+/*int percent(int summ, int time)
 {
     
     if (time < 31 && summ < 100000) summ -= 0.83 * time;
@@ -27,5 +28,5 @@ int percent(int summ, int time)
     if (time > 240 && time < 366 && summ > 100000) summ += 1.25 * time;
 
 }
-
+*/
 
